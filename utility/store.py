@@ -39,11 +39,9 @@ class Store():
       return cls.__name__
 
   def push(self, clear=False):
-    print("A")
     db = Neo4jConnection()
     if clear:
       db.clear()
-    print("B")
     tx = db.transaction()
     for key, rows in self.nodes.items():
       query = """
@@ -51,7 +49,6 @@ class Store():
         CREATE (n:%s) SET n += row
       """ % (key)
       tx.run(query, data=rows)
-    print("C")
     for key, rows in self.relationships.items():
       query = """
         UNWIND $data AS row
@@ -59,9 +56,8 @@ class Store():
         CREATE (n)-[:%s]->(m)
       """ % (key)
       tx.run(query, data=rows)
-    print("D")
     db.commit(tx)
-    print("E")
+    db.close()
 
   def __str__(self):
     result = ""
