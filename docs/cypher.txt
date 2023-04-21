@@ -1,0 +1,5 @@
+MATCH p1=(n:Instance)-[:HAS_IDENTIFIER|HAS_ITEM|HAS_DATA_TYPE|HAS_PROPERTY *1..5]->(m) WHERE n.name = 'Diastolic Blood Pressure'
+MATCH p2=(n)-[:BASED_ON]->(tp)     
+WITH collect(p1) + collect(p2) as t
+call apoc.convert.toTree(t) yield value
+RETURN value

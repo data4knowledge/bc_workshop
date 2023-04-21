@@ -1,0 +1,592 @@
+﻿[
+  {
+    "value": {
+      "based_on": [
+        {
+          "_type": "Template",
+          "name": "Base Observation",
+          "_id": 5063,
+          "id": 1,
+          "uuid": "552ecbb7-8825-4a91-856e-fbf3b679cf9c",
+          "uri": "https://bc.d4k.dk/bc_template/base_observation"
+        }
+      ],
+      "_type": "Instance",
+      "name": "Diastolic Blood Pressure",
+      "has_item": [
+        {
+          "has_data_type": [
+            {
+              "_type": "DataType",
+              "name": "coding",
+              "has_property": [
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "user selected",
+                  "_id": 1801,
+                  "id": 1140,
+                  "uuid": "7d8da2c7-5db8-4918-a1ac-30b321fe192f",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/position/coding/user_selected"
+                },
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "system",
+                  "_id": 1803,
+                  "id": 1142,
+                  "uuid": "553e6aae-2d90-449c-9ace-17e27ea4edfa",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/position/coding/system"
+                },
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "code",
+                  "_id": 1800,
+                  "id": 1139,
+                  "uuid": "8b69d547-56b7-4a4b-945c-40b16c333429",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/position/coding/code"
+                },
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "display",
+                  "_id": 1804,
+                  "id": 1143,
+                  "uuid": "39fe48e1-2055-4561-aa1e-8010ed2fd878",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/position/coding/display"
+                },
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "version",
+                  "_id": 1802,
+                  "id": 1141,
+                  "uuid": "4921f7e1-fc16-42e4-8440-42eb800d352f",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/position/coding/version"
+                }
+              ],
+              "_id": 1104,
+              "id": 578,
+              "has_response": [
+                {
+                  "pref_label": "Sitting",
+                  "cli": "C62122",
+                  "notation": "SITTING",
+                  "_type": "ValueSet",
+                  "cl": "C71148",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2010-04-08/sdtm/C71148/C62122",
+                  "_id": 512,
+                  "id": 1937,
+                  "uuid": "9986a55e-3b98-4b53-90c0-86ba5d1dc6d4"
+                },
+                {
+                  "pref_label": "Supine Position",
+                  "cli": "C62167",
+                  "notation": "SUPINE",
+                  "_type": "ValueSet",
+                  "cl": "C71148",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2010-04-08/sdtm/C71148/C62167",
+                  "_id": 513,
+                  "id": 1938,
+                  "uuid": "3b0e2d68-712d-4634-8fbe-22024bb0689f"
+                },
+                {
+                  "pref_label": "Standing",
+                  "cli": "C62166",
+                  "notation": "STANDING",
+                  "_type": "ValueSet",
+                  "cl": "C71148",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2019-12-20/sdtm/C71148/C62166",
+                  "_id": 511,
+                  "id": 1936,
+                  "uuid": "5f7daddf-d711-47b6-a018-9ec4c0084af8"
+                }
+              ],
+              "uuid": "",
+              "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/position/coding"
+            }
+          ],
+          "_type": "InstanceItem",
+          "name": "Position",
+          "_id": 183,
+          "id": 236,
+          "uuid": "a3ca9372-7864-42db-8a1f-46a880c9f5bb",
+          "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/position",
+          "collect": "True",
+          "enabled": "True"
+        },
+        {
+          "has_data_type": [
+            {
+              "_type": "DataType",
+              "name": "coding",
+              "has_property": [
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/user_selected",
+                  "_type": "DataTypeProperty",
+                  "name": "user selected",
+                  "_id": 1795,
+                  "id": 1134,
+                  "uuid": "c4f331a2-311a-4dbe-a14a-6396eefa82b0",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/user_selected"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/version",
+                  "_type": "DataTypeProperty",
+                  "name": "version",
+                  "_id": 1796,
+                  "id": 1135,
+                  "uuid": "e21a92ce-0396-4a3b-9979-1fcb02324332",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/version"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/system",
+                  "_type": "DataTypeProperty",
+                  "name": "system",
+                  "_id": 1797,
+                  "id": 1136,
+                  "uuid": "1aafd3d6-bfe1-4f5c-9c98-838c77ce2646",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/system"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/display",
+                  "_type": "DataTypeProperty",
+                  "name": "display",
+                  "_id": 1798,
+                  "id": 1137,
+                  "uuid": "8dc9c616-1949-4655-be17-7d5b949d6686",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/display"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/code",
+                  "_type": "DataTypeProperty",
+                  "name": "code",
+                  "_id": 1794,
+                  "id": 1133,
+                  "uuid": "53e30326-4379-4a3d-86df-63396ce1e778",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/code"
+                }
+              ],
+              "_id": 1102,
+              "id": 576,
+              "has_response": [
+                {
+                  "pref_label": "Diastolic Blood Pressure",
+                  "cli": "C25299",
+                  "notation": "DIABP",
+                  "_type": "ValueSet",
+                  "cl": "C66741",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2016-09-30/sdtm/C66741/C25299",
+                  "_id": 510,
+                  "id": 1935,
+                  "uuid": "fe47aefe-1c94-4516-b895-1952fa47bf0f"
+                }
+              ],
+              "uuid": "",
+              "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding"
+            }
+          ],
+          "_type": "InstanceItem",
+          "name": "Test",
+          "_id": 181,
+          "id": 234,
+          "uuid": "5af04605-115c-493a-a33a-2ab6332dde2b",
+          "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test",
+          "collect": "False",
+          "enabled": "True"
+        },
+        {
+          "has_data_type": [
+            {
+              "_type": "DataType",
+              "name": "quantity",
+              "has_property": [
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/observation_result/result/quantity/system",
+                  "_type": "DataTypeProperty",
+                  "name": "system",
+                  "_id": 1818,
+                  "id": 1157,
+                  "uuid": "93b8f420-57ee-4028-b1e4-4747ef3ffac8",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/result/quantity/system"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/observation_result/result/quantity/unit",
+                  "_type": "DataTypeProperty",
+                  "name": "unit",
+                  "_id": 1817,
+                  "id": 1156,
+                  "uuid": "e6712ade-73b0-406c-aaff-6402bd1e06f8",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/result/quantity/unit"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/observation_result/result/quantity/comparator",
+                  "_type": "DataTypeProperty",
+                  "name": "comparator",
+                  "_id": 1819,
+                  "id": 1158,
+                  "uuid": "f2f8c413-9ab4-4daa-99af-90e2f52c905b",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/result/quantity/comparator"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/observation_result/result/quantity/value",
+                  "_type": "DataTypeProperty",
+                  "name": "value",
+                  "_id": 1815,
+                  "id": 1154,
+                  "uuid": "6078cfd9-ba5c-48ab-8060-1cb867b8fed4",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/result/quantity/value"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/observation_result/result/quantity/code",
+                  "_type": "DataTypeProperty",
+                  "name": "code",
+                  "_id": 1816,
+                  "id": 1155,
+                  "uuid": "14230d8f-c80f-4984-9df9-5de468d22544",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/result/quantity/code"
+                }
+              ],
+              "_id": 1107,
+              "id": 581,
+              "has_response": [
+                {
+                  "pref_label": "Millimeter of Mercury",
+                  "cli": "C49670",
+                  "notation": "mmHg",
+                  "_type": "ValueSet",
+                  "cl": "C66770",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2014-03-28/sdtm/C66770/C49670",
+                  "_id": 518,
+                  "id": 1943,
+                  "uuid": "420e4411-1a3d-46ac-9d29-547ed06004b7"
+                },
+                {
+                  "pref_label": "Pascal",
+                  "cli": "C42547",
+                  "notation": "Pa",
+                  "_type": "ValueSet",
+                  "cl": "C66770",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2018-03-30/sdtm/C66770/C42547",
+                  "_id": 519,
+                  "id": 1944,
+                  "uuid": "d64b60f3-d431-428b-a356-e0987e9a75b9"
+                }
+              ],
+              "uuid": "",
+              "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/result/quantity"
+            }
+          ],
+          "_type": "InstanceItem",
+          "name": "Result",
+          "_id": 186,
+          "id": 239,
+          "uuid": "0eca67b6-16b0-4f21-8eac-2754762628c8",
+          "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/result",
+          "collect": "True",
+          "enabled": "True"
+        },
+        {
+          "has_data_type": [
+            {
+              "_type": "DataType",
+              "name": "date_time",
+              "has_property": [
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/common/date_time/date_time/value",
+                  "_type": "DataTypeProperty",
+                  "name": "value",
+                  "_id": 1799,
+                  "id": 1138,
+                  "uuid": "b6e27185-354a-4b94-90ec-48e2d5b5af70",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/date_time/date_time/value"
+                }
+              ],
+              "_id": 1103,
+              "id": 577,
+              "uuid": "",
+              "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/date_time/date_time"
+            }
+          ],
+          "_type": "InstanceItem",
+          "name": "Date Time",
+          "_id": 182,
+          "id": 235,
+          "uuid": "61b2b701-5c39-4718-bfcd-916ee30c8490",
+          "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/date_time",
+          "collect": "True",
+          "enabled": "True"
+        },
+        {
+          "has_data_type": [
+            {
+              "_type": "DataType",
+              "name": "coding",
+              "has_property": [
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/common/location/laterality/coding/user_selected",
+                  "_type": "DataTypeProperty",
+                  "name": "user selected",
+                  "_id": 1811,
+                  "id": 1150,
+                  "uuid": "1bf97f88-6e63-40f2-9af3-b2c0e3a67c26",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/laterality/coding/user_selected"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/common/location/laterality/coding/code",
+                  "_type": "DataTypeProperty",
+                  "name": "code",
+                  "_id": 1810,
+                  "id": 1149,
+                  "uuid": "c6609a94-eb37-449b-b173-bdb1fc3013ac",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/laterality/coding/code"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/common/location/laterality/coding/system",
+                  "_type": "DataTypeProperty",
+                  "name": "system",
+                  "_id": 1813,
+                  "id": 1152,
+                  "uuid": "76a07327-c91b-4a1e-bba3-4ccc6d23721f",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/laterality/coding/system"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/common/location/laterality/coding/display",
+                  "_type": "DataTypeProperty",
+                  "name": "display",
+                  "_id": 1814,
+                  "id": 1153,
+                  "uuid": "6504c1b4-8179-486b-8cc8-eb171ba1296c",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/laterality/coding/display"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/common/location/laterality/coding/version",
+                  "_type": "DataTypeProperty",
+                  "name": "version",
+                  "_id": 1812,
+                  "id": 1151,
+                  "uuid": "ca556623-592a-41e7-aae6-42c60fa3e9b9",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/laterality/coding/version"
+                }
+              ],
+              "_id": 1106,
+              "id": 580,
+              "has_response": [
+                {
+                  "pref_label": "Left",
+                  "cli": "C25229",
+                  "notation": "LEFT",
+                  "_type": "ValueSet",
+                  "cl": "C99073",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2011-12-09/sdtm/C99073/C25229",
+                  "_id": 515,
+                  "id": 1940,
+                  "uuid": "ed332179-a8b4-4eea-b529-97a7f8b21c15"
+                },
+                {
+                  "pref_label": "Bilateral",
+                  "cli": "C13332",
+                  "notation": "BILATERAL",
+                  "_type": "ValueSet",
+                  "cl": "C99073",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2011-12-09/sdtm/C99073/C13332",
+                  "_id": 517,
+                  "id": 1942,
+                  "uuid": "96b0aa40-eb47-4c3d-a775-989da72ef818"
+                },
+                {
+                  "pref_label": "Right",
+                  "cli": "C25228",
+                  "notation": "RIGHT",
+                  "_type": "ValueSet",
+                  "cl": "C99073",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2011-12-09/sdtm/C99073/C25228",
+                  "_id": 516,
+                  "id": 1941,
+                  "uuid": "de60132f-7a90-4e49-a99f-b098139cef19"
+                }
+              ],
+              "uuid": "",
+              "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/laterality/coding"
+            }
+          ],
+          "_type": "InstanceItem",
+          "name": "Laterality",
+          "_id": 185,
+          "id": 238,
+          "uuid": "87ab4ebd-cdb8-40f3-9d86-a17756618c69",
+          "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/laterality",
+          "collect": "True",
+          "enabled": "True"
+        },
+        {
+          "has_data_type": [
+            {
+              "_type": "DataType",
+              "name": "coding",
+              "has_property": [
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "display",
+                  "_id": 1809,
+                  "id": 1148,
+                  "uuid": "3305ebca-bef9-492e-b520-673d4a544ffc",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/site_of_administration/coding/display"
+                },
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "code",
+                  "_id": 1805,
+                  "id": 1144,
+                  "uuid": "edf91d73-851d-48e7-a13a-0273e0e3be14",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/site_of_administration/coding/code"
+                },
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "user selected",
+                  "_id": 1806,
+                  "id": 1145,
+                  "uuid": "213f3c72-ac72-46f2-81ae-c0ceca78c74b",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/site_of_administration/coding/user_selected"
+                },
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "system",
+                  "_id": 1808,
+                  "id": 1147,
+                  "uuid": "d5e9fd20-fcde-4a3d-a532-ed33828cf47f",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/site_of_administration/coding/system"
+                },
+                {
+                  "crm_uri": "",
+                  "_type": "DataTypeProperty",
+                  "name": "version",
+                  "_id": 1807,
+                  "id": 1146,
+                  "uuid": "cc818559-783a-46a6-b9ca-8b2d791c7dcf",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/site_of_administration/coding/version"
+                }
+              ],
+              "_id": 1105,
+              "id": 579,
+              "has_response": [
+                {
+                  "pref_label": "Arm",
+                  "cli": "C32141",
+                  "notation": "ARM",
+                  "_type": "ValueSet",
+                  "cl": "C74456",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2018-12-21/sdtm/C74456/C32141",
+                  "_id": 514,
+                  "id": 1939,
+                  "uuid": "f2b50005-a89b-448b-80b3-7d2e7366cb4b"
+                }
+              ],
+              "uuid": "",
+              "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/site_of_administration/coding"
+            }
+          ],
+          "_type": "InstanceItem",
+          "name": "Site of Administration",
+          "_id": 184,
+          "id": 237,
+          "uuid": "889fc02d-381c-4652-90a8-8b0dba2cee5c",
+          "collect": "False",
+          "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/site_of_administration",
+          "enabled": "True"
+        }
+      ],
+      "_id": 388,
+      "id": 29,
+      "uuid": "b2e063c4-9134-4f26-a25a-599a1a67a855",
+      "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure",
+      "has_identifier": [
+        {
+          "has_data_type": [
+            {
+              "_type": "DataType",
+              "name": "coding",
+              "has_property": [
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/user_selected",
+                  "_type": "DataTypeProperty",
+                  "name": "user selected",
+                  "_id": 1795,
+                  "id": 1134,
+                  "uuid": "c4f331a2-311a-4dbe-a14a-6396eefa82b0",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/user_selected"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/version",
+                  "_type": "DataTypeProperty",
+                  "name": "version",
+                  "_id": 1796,
+                  "id": 1135,
+                  "uuid": "e21a92ce-0396-4a3b-9979-1fcb02324332",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/version"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/system",
+                  "_type": "DataTypeProperty",
+                  "name": "system",
+                  "_id": 1797,
+                  "id": 1136,
+                  "uuid": "1aafd3d6-bfe1-4f5c-9c98-838c77ce2646",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/system"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/display",
+                  "_type": "DataTypeProperty",
+                  "name": "display",
+                  "_id": 1798,
+                  "id": 1137,
+                  "uuid": "8dc9c616-1949-4655-be17-7d5b949d6686",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/display"
+                },
+                {
+                  "crm_uri": "https://crm.d4k.dk/dataset/observation/test/coding/code",
+                  "_type": "DataTypeProperty",
+                  "name": "code",
+                  "_id": 1794,
+                  "id": 1133,
+                  "uuid": "53e30326-4379-4a3d-86df-63396ce1e778",
+                  "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding/code"
+                }
+              ],
+              "_id": 1102,
+              "id": 576,
+              "has_response": [
+                {
+                  "pref_label": "Diastolic Blood Pressure",
+                  "cli": "C25299",
+                  "notation": "DIABP",
+                  "_type": "ValueSet",
+                  "cl": "C66741",
+                  "term_uri": "https://ct.d4k.dk/cdisc/dataset/sc/2016-09-30/sdtm/C66741/C25299",
+                  "_id": 510,
+                  "id": 1935,
+                  "uuid": "fe47aefe-1c94-4516-b895-1952fa47bf0f"
+                }
+              ],
+              "uuid": "",
+              "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test/coding"
+            }
+          ],
+          "_type": "InstanceItem",
+          "name": "Test",
+          "_id": 181,
+          "id": 234,
+          "uuid": "5af04605-115c-493a-a33a-2ab6332dde2b",
+          "uri": "https://bc.d4k.dk/bc_instance/diastolic_blood_pressure/test",
+          "collect": "False",
+          "enabled": "True"
+        }
+      ]
+    }
+  }
+]

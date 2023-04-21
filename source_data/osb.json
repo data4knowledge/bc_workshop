@@ -1,0 +1,245 @@
+﻿[
+  {
+    "value": {
+      "_type": "Concept:ActivityGroup",
+      "name": "Examinations",
+      "_id": 16638,
+      "has": [
+        {
+          "_type": "Concept:ActivitySubGroup",
+          "name": "Vital Signs",
+          "_id": 16647,
+          "has": [
+            {
+              "_type": "Concept:Activity",
+              "name": "Diastolic Blood Pressure",
+              "_id": 16675,
+              "has": [
+                {
+                  "topic_code": "BP_DIASTOLIC",
+                  "adam_param_code": "DIABP",
+                  "_type": "Concept:ActivityInstance:Finding:NumericFinding",
+                  "name": "Diastolic Blood Pressure",
+                  "_id": 16676,
+                  "has": [
+                    {
+                      "_type": "ActivityItem",
+                      "for": [
+                        {
+                          "uid": "C25228",
+                          "_type": "CTTerm",
+                          "code_submission_value": "RIGHT",
+                          "_id": 34177,
+                          "has": [
+                            {
+                              "uid": "C99073",
+                              "_type": "CTCodeList",
+                              "name": "Laterality",
+                              "_id": 8417,
+                              "submission_value": "LAT"
+                            }
+                          ],
+                          "nci_preferred_name": "Right"
+                        },
+                        {
+                          "uid": "C25229",
+                          "_type": "CTTerm",
+                          "code_submission_value": "LEFT",
+                          "_id": 34176,
+                          "has": [
+                            {
+                              "uid": "C99073",
+                              "_type": "CTCodeList",
+                              "name": "Laterality",
+                              "_id": 8417,
+                              "submission_value": "LAT"
+                            }
+                          ],
+                          "nci_preferred_name": "Left"
+                        }
+                      ],
+                      "_id": 17283,
+                      "order": "5"
+                    },
+                    {
+                      "_type": "ActivityItem",
+                      "for": [
+                        {
+                          "uid": "C32141",
+                          "_type": "CTTerm",
+                          "code_submission_value": "ARM",
+                          "_id": 12360,
+                          "has": [
+                            {
+                              "uid": "C74456",
+                              "_type": "CTCodeList",
+                              "name": "Anatomical Location",
+                              "_id": 8124,
+                              "submission_value": "LOC"
+                            }
+                          ],
+                          "nci_preferred_name": "Arm"
+                        }
+                      ],
+                      "_id": 17281,
+                      "order": "4"
+                    },
+                    {
+                      "_type": "ActivityItem",
+                      "for": [
+                        {
+                          "uid": "C62166",
+                          "_type": "CTTerm",
+                          "code_submission_value": "STANDING",
+                          "_id": 6338,
+                          "has": [
+                            {
+                              "uid": "C71148",
+                              "_type": "CTCodeList",
+                              "name": "Position",
+                              "_id": 8536,
+                              "submission_value": "POSITION"
+                            }
+                          ],
+                          "nci_preferred_name": "Standing"
+                        },
+                        {
+                          "uid": "C62167",
+                          "_type": "CTTerm",
+                          "code_submission_value": "SUPINE",
+                          "_id": 6340,
+                          "has": [
+                            {
+                              "uid": "C71148",
+                              "_type": "CTCodeList",
+                              "name": "Position",
+                              "_id": 8536,
+                              "submission_value": "POSITION"
+                            }
+                          ],
+                          "nci_preferred_name": "Supine Position"
+                        },
+                        {
+                          "uid": "C62122",
+                          "_type": "CTTerm",
+                          "code_submission_value": "SITTING",
+                          "_id": 6335,
+                          "has": [
+                            {
+                              "uid": "C71148",
+                              "_type": "CTCodeList",
+                              "name": "Position",
+                              "_id": 8536,
+                              "submission_value": "POSITION"
+                            }
+                          ],
+                          "nci_preferred_name": "Sitting"
+                        }
+                      ],
+                      "_id": 17285,
+                      "order": "3"
+                    },
+                    {
+                      "_type": "ActivityItem",
+                      "for": [
+                        {
+                          "uid": "C49670",
+                          "_type": "CTTerm",
+                          "code_submission_value": "mmHg",
+                          "_id": 11453,
+                          "has": [
+                            {
+                              "uid": "C66770",
+                              "_type": "CTCodeList",
+                              "name": "Units for Vital Signs Results",
+                              "_id": 8678,
+                              "submission_value": "VSRESU"
+                            },
+                            {
+                              "uid": "C71620",
+                              "_type": "CTCodeList",
+                              "name": "Unit",
+                              "_id": 8677,
+                              "submission_value": "UNIT"
+                            }
+                          ],
+                          "nci_preferred_name": "Millimeter of Mercury"
+                        }
+                      ],
+                      "_id": 17279,
+                      "order": "1"
+                    },
+                    {
+                      "_type": "ActivityItem",
+                      "for": [
+                        {
+                          "uid": "C25299",
+                          "_type": "CTTerm",
+                          "code_submission_value": "DIABP",
+                          "_id": 11738,
+                          "has": [
+                            {
+                              "uid": "C66741",
+                              "_type": "CTCodeList",
+                              "name": "Vital Signs Test Code",
+                              "_id": 8685,
+                              "submission_value": "VSTESTCD"
+                            }
+                          ],
+                          "nci_preferred_name": "Diastolic Blood Pressure",
+                          "name_submission_value": "Diastolic Blood Pressure"
+                        }
+                      ],
+                      "_id": 17244
+                    },
+                    {
+                      "_type": "ActivityItem",
+                      "for": [
+                        {
+                          "uid": "SDTMCAT_VITAL SIGNS",
+                          "_type": "CTTerm",
+                          "code_submission_value": "VITAL SIGNS",
+                          "_id": 17077,
+                          "has": [
+                            {
+                              "_type": "CTCodeList",
+                              "_id": 17076,
+                              "submission_value": "SDTMCAT"
+                            }
+                          ]
+                        }
+                      ],
+                      "_id": 17103
+                    },
+                    {
+                      "_type": "ActivityItem",
+                      "for": [
+                        {
+                          "uid": "C49622",
+                          "_type": "CTTerm",
+                          "code_submission_value": "VS",
+                          "_id": 7645,
+                          "has": [
+                            {
+                              "uid": "C66734",
+                              "_type": "CTCodeList",
+                              "name": "SDTM Domain Abbreviation",
+                              "_id": 8581,
+                              "submission_value": "DOMAIN"
+                            }
+                          ],
+                          "nci_preferred_name": "Vital Signs Domain"
+                        }
+                      ],
+                      "_id": 16960
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
