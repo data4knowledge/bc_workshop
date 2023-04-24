@@ -1,7 +1,6 @@
+import argparse
 import json
 from utility.store import Store
-
-store = Store()
 
 def save_json(data, filename):
   with open(filename, 'w', encoding='utf-8') as f:
@@ -45,12 +44,28 @@ def klass(properties, parent_key):
     return properties['_type']
   else:
     return parent_key
-  
-data = read_json('source_data/osb.json')
-process_node(data, "root")
-print(store)
-try:
-  store.push(clear=True)
-except Exception as e:
-  print("Exception")
-  print(e)
+
+if __name__ == "__main__":
+  parser = argparse.ArgumentParser(
+    prog='Neo4J Simple JSON Loader',
+    description='Will load a JSON file into Neo4j creating nodes as per the JSON structure',
+    epilog='Note: Multiple files can be loaded, you can clear the DB with the first load'
+  )
+  parser.add_argument('filename') 
+  parser.add_argument("-s", "--start", type=int, nargs='?', default=1, help = "The starting node identifier")
+  parser.add_argument('-c', "--clear", dest='clear', action=argparse.BooleanOptionalAction, help = "Clear the database")
+  args = parser.parse_args()
+  filename = args.filename
+  clear = args.clear
+  start = args.start
+  store = Store(start)
+  print (f"Processing {filename} with start node = {start} and DB clear = {clear} ...")
+  data = read_json(f'source_data/{filename}')
+  process_node(data, "root")
+  print ("... Done")
+  #print(store)
+  try:
+    store.push(clear=clear)
+  except Exception as e:
+    print("Exception")
+    print(e)
