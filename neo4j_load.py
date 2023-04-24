@@ -51,7 +51,7 @@ if __name__ == "__main__":
     description='Will load a JSON file into Neo4j creating nodes as per the JSON structure',
     epilog='Note: Multiple files can be loaded, you can clear the DB with the first load'
   )
-  parser.add_argument('filename') 
+  parser.add_argument('filename', help="The name of the JSON file. The extension should not be specified, set to '.json") 
   parser.add_argument("-s", "--start", type=int, nargs='?', default=1, help = "The starting node identifier")
   parser.add_argument('-c', "--clear", dest='clear', action=argparse.BooleanOptionalAction, help = "Clear the database")
   args = parser.parse_args()
@@ -60,7 +60,7 @@ if __name__ == "__main__":
   start = args.start
   store = Store(start)
   print (f"Processing {filename} with start node = {start} and DB clear = {clear} ...")
-  data = read_json(f'source_data/{filename}')
+  data = read_json(f'source_data/{filename}.json')
   process_node(data, "root")
   print ("... Done")
   #print(store)
