@@ -46,7 +46,7 @@ def klass(properties, parent_key):
   else:
     return parent_key
   
-data = read_json('source_data/cdisc_lib.json')
+data = read_json('source_data/osb.json')
 process_node(data, "root")
 print(store)
 try:
